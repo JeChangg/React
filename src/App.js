@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import MenuUtama from './Page/MenuUtama.jsx';
+import MenuMakanan from './Page/MenuMakanan'
+import Input from './Page/Input.jsx';
+import Header from './Page/Header.jsx';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <section>
+        <Header/>
+        <MenuMakanan/>
+        <Input/>
+      </section>
     </div>
   );
 }
